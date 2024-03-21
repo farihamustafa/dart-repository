@@ -1,12 +1,16 @@
 import 'dart:io';
-
+//EXAMPLE 1
 class person{
   person(){
     print("hello world!");
 
   }
 }
+//----END-----//
 
+
+
+//EXAMPLE 2(PARAMETERISED CONSTRUCTOR)
 class employee{
   String? emp_name;
   int? emp_age;
@@ -23,11 +27,16 @@ class employee{
     print("employee occupation is ${emp_occupation}");
   }
   }
-
+//---END----//
 
 
 main(){
-  person p = person();
+  //EXAMPLE 1
+  // person p = person();
+  //----END----//
+
+
+  //EXAMPLE 2
   print("enter your name");
   String? name= stdin.readLineSync()!;
   print("enter your age");
@@ -38,5 +47,6 @@ main(){
 
   employee emp = employee(name, age,occupation);
   emp.display();
+  //----END----//
 
 }
